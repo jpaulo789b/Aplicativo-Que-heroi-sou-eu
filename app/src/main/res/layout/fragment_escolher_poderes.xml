@@ -1,0 +1,107 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/heroi_bg"
+    tools:context="joaopaulo.com.br.queheroisoueu.fragments.EscolherPoderesFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center_horizontal"
+        android:text="Escolha seu poder"
+        android:textColor="#ecb81e"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+    <Button
+        android:id="@+id/buttonPoderTartaruga"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/heroibtn"
+        android:drawableLeft="@drawable/turtle_power"
+        android:paddingLeft="5dp"
+        android:paddingRight="10dp"
+        android:text="Poder de tartaruga"
+        android:textColor="#ecb81e" />
+    <Button
+        android:id="@+id/buttonPoderRaios"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/heroibtn"
+        android:drawableLeft="@drawable/thors_hammer"
+        android:paddingLeft="5dp"
+        android:paddingRight="10dp"
+        android:text="Raios"
+        android:textColor="#ecb81e" />
+    <Button
+        android:id="@+id/buttonPoderVoo"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/heroibtn"
+        android:drawableLeft="@drawable/super_man_crest"
+        android:paddingLeft="5dp"
+        android:paddingRight="10dp"
+        android:text="voo"
+        android:textColor="#ecb81e" />
+    <Button
+        android:id="@+id/buttonPoderAtiraTeias"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/heroibtn"
+        android:drawableLeft="@drawable/spider_web"
+        android:paddingLeft="5dp"
+        android:paddingRight="10dp"
+        android:text="Atira Teias"
+        android:textColor="#ecb81e" />
+    <Button
+        android:id="@+id/buttonAcidente"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/heroibtn"
+        android:drawableLeft="@drawable/laser_vision"
+        android:paddingLeft="5dp"
+        android:paddingRight="10dp"
+        android:text="Visão de calor"
+        android:textColor="#ecb81e" />
+    <Button
+        android:id="@+id/buttonPoderSuperForca"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/heroibtn"
+        android:drawableLeft="@drawable/super_strength"
+        android:paddingLeft="5dp"
+        android:paddingRight="10dp"
+        android:text="Super força"
+        android:textColor="#ecb81e" />
+    <Button
+        android:id="@+id/buttonEscolheuPoder"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/btn_escolher_poder"
+        android:backgroundTint="#ecb81e"
+        android:elevation="1dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="10dp"
+        android:text="Mostrar  história"
+        android:textColor="#233B4F"
+        android:textSize="22sp" />
+</LinearLayout>

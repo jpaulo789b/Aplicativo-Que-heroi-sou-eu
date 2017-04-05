@@ -1,0 +1,93 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="joaopaulo.com.br.queheroisoueu.fragments.MainFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/heroi_bg"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textViewHistoriaHeroi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center_horizontal"
+            android:text="Sua história de herói"
+            android:textColor="#ecb81e"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <MultiAutoCompleteTextView
+            android:id="@+id/textViewHistoria"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+
+            android:layout_marginRight="30dp"
+            android:background="@drawable/heroibtn"
+            android:padding="7dp"
+            android:text="MultiAutoCompleteTextView" />
+
+        <TextView
+            android:id="@+id/textView2Poderes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center_horizontal"
+            android:text="Poderes Extras"
+            android:textColor="#FFF"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/poderExtraA"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/heroibtn"
+            android:drawableLeft="@drawable/lightning"
+            android:paddingLeft="5dp"
+            android:paddingRight="10dp"
+            android:text="Veio de um acidente"
+            android:textColor="#ecb81e" />
+        <Button
+            android:id="@+id/poderExtraB"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/heroibtn"
+            android:drawableLeft="@drawable/lightning"
+            android:paddingLeft="5dp"
+            android:paddingRight="10dp"
+            android:text="Veio de um acidente"
+            android:textColor="#ecb81e" />
+
+
+        <Button
+            android:id="@+id/buttonVoltarParaInicio"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/btn_escolher_poder"
+            android:backgroundTint="#ecb81e"
+            android:elevation="1dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="10dp"
+            android:text="Refazer"
+            android:textColor="#233B4F"
+            android:textSize="22sp" />
+
+    </LinearLayout>
+
+
+</FrameLayout>
