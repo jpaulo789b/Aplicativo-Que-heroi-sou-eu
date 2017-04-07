@@ -7,10 +7,12 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
 import joaopaulo.com.br.queheroisoueu.R;
-import joaopaulo.com.br.queheroisoueu.fragments.EscolherPoderesFragment;
+import joaopaulo.com.br.queheroisoueu.fragments.EscolherPoderFragment;
+import joaopaulo.com.br.queheroisoueu.fragments.HistoriaFragment;
 import joaopaulo.com.br.queheroisoueu.fragments.MainFragment;
+import joaopaulo.com.br.queheroisoueu.historias.Historias;
 
-public class MainActivity extends AppCompatActivity implements MainFragment.MainFragmentInteractionListener, EscolherPoderesFragment.EscolherPoderesInteractListerner{
+public class MainActivity extends AppCompatActivity implements MainFragment.MainFragmentInteractionListener, EscolherPoderFragment.EscolherPoderesInteractListerner, HistoriaFragment.OnFragmentInteractionListener{
 
 
 
@@ -27,12 +29,29 @@ public class MainActivity extends AppCompatActivity implements MainFragment.Main
         }
 
     }
-    public void loadEscolherPoderes(){
-        EscolherPoderesFragment escolherPoderesFragment = new EscolherPoderesFragment();
+    public void loadTelaIncial(){
+        MainFragment mainFragment = new MainFragment();
         this.getSupportFragmentManager()
                 .beginTransaction()
-                .replace(R.id.frameImport, escolherPoderesFragment)
+                .replace(R.id.frameImport, mainFragment).commit();
+    }
+    public void loadEscolherPoderes(){
+        EscolherPoderFragment escolherPoderFragment = new EscolherPoderFragment();
+        this.getSupportFragmentManager()
+                .beginTransaction()
+                .replace(R.id.frameImport, escolherPoderFragment)
                 .addToBackStack(null).commit();
+    }
+    public void  loadMostrarHistoria(int i){
+        Historias h = new Historias();
+
+        HistoriaFragment historiaFragment = new HistoriaFragment();
+        historiaFragment.setHistoria(h.retornaHistoria(i));
+        this.getSupportFragmentManager()
+                .beginTransaction()
+                .replace(R.id.frameImport, historiaFragment)
+                .addToBackStack(null).commit();
+
     }
 
     @Override
@@ -42,6 +61,11 @@ public class MainActivity extends AppCompatActivity implements MainFragment.Main
 
     @Override
     public void onEscolherPoderesFragmentInteraction(Uri uri) {
+
+    }
+
+    @Override
+    public void onFragmentInteraction(Uri uri) {
 
     }
 }
